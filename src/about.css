@@ -3,6 +3,7 @@
   opacity: 0;
   transition: all 0.6s;
   margin-top: 10%;
+  user-select: none;
 
   width: calc(100% - 30px);
   height: calc(100% - 25% - 80px);
@@ -19,6 +20,7 @@
 .about-container-show {
   opacity: 1;
   margin-top: 0%;
+  user-select: auto;
 }
 
 .about-content {
@@ -30,7 +32,7 @@
 .about-content div:not(:first-child) {
   margin-top: 20px;
 }
-.about-content-inner{
+.about-content-inner {
   padding-right: 20px;
 }
 .about-content-title {
@@ -40,6 +42,7 @@
 
 .about-content img {
   width: 100%;
+  user-select: none;
 }
 
 @media screen and (max-width: 900px) {
@@ -47,4 +50,3 @@
     grid-template-columns: 0px 1fr 0px;
   }
 }
-
