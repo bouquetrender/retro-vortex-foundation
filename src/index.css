@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "VCR OSD Mono";
+  src: url("https://db.onlinewebfonts.com/t/2545d122b16126676225a5b52283ae23.eot");
+  src: url("https://db.onlinewebfonts.com/t/2545d122b16126676225a5b52283ae23.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/2545d122b16126676225a5b52283ae23.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/2545d122b16126676225a5b52283ae23.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/2545d122b16126676225a5b52283ae23.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/2545d122b16126676225a5b52283ae23.svg#VCR OSD Mono")
+      format("svg");
+}
+
+:root {
+  --color-bg: #0f0026;
+  --color-ring: #588386;
+  --color-title: #a7be9e;
+
+  --color-selection: #4d634e;
+  --color-selection-bg: #a7be9e;
+
+  --lds-size: 107px;
+  --lds-keyframe-size: 100px;
+}
+
+html,
+body,
+main {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  height: -webkit-fill-available;
+  overflow: hidden;
+  background-color: var(--color-bg);
+}
+
+main {
+  height: 100vh;
+  background: linear-gradient(rgb(75 55 231 / 10%) 50%, rgb(49 69 34) 50%),
+    linear-gradient(
+      90deg,
+      rgb(64 55 55 / 9%),
+      rgb(64 181 64 / 3%),
+      rgba(0, 0, 255, 0.06)
+    );
+  background-size: 100% 2px, 3px 100%;
+}
+
+::selection {
+  color: var(--color-selection);
+  background-color: var(--color-selection-bg);
+}
+
+::-webkit-scrollbar {
+	width: 1px;
+}
+::-webkit-scrollbar-track {
+	background: #385a2564;
+}
+::-webkit-scrollbar-thumb {
+	background: #729772;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #729772;
+}
