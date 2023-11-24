@@ -78,7 +78,7 @@ const Screen = React.memo(() => {
 });
 
 const Core = () => {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
